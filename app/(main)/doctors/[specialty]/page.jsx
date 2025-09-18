@@ -3,6 +3,29 @@ import { getDoctorsBySpecialty } from "@/actions/doctors-listing";
 import { DoctorCard } from "../components/doctor-card";
 import { PageHeader } from "@/components/page-header";
 
+export async function generateStaticParams() {
+  return [
+    { specialty: 'General Medicine' },
+    { specialty: 'cardiology' },
+     { specialty: 'dermatology' },
+      { specialty: 'endocrinology' },
+       { specialty: 'gastroenterology' },
+        { specialty: 'neurology' },
+         { specialty: 'obstetrics & gynecology' },
+          { specialty: 'oncology' },
+           { specialty: 'ophthalmology' },
+            { specialty: 'orthopedics' },
+             { specialty: 'pediatrics' },
+              { specialty: 'psychiatry' },
+               { specialty: 'pulmonology' },
+                { specialty: 'radiology' },
+                 { specialty: 'urology' },
+                  { specialty: 'other' },
+      
+    // Add all specialties you want to export
+  ];
+}
+
 export default async function DoctorSpecialtyPage({ params }) {
   const { specialty } = await params;
 
