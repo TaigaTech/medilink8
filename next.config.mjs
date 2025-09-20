@@ -1,19 +1,14 @@
-import withPWA from "next-pwa";
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
   images: {
     remotePatterns: [
       {
         protocol: "https",
         hostname: "img.clerk.com",
-      },
-    ],
-  },
+      }
+    ]
+  }
 };
 
-export default withPWA({
-  dest: "public",
-  register: true,
-  skipWaiting: true,
-})(nextConfig);
+export default nextConfig;
