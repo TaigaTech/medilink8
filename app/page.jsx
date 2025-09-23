@@ -23,7 +23,7 @@ export default function Home() {
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
                 Connect with doctors <br />
-                <span className="gradient-title"> anytime, anywhere with MediLink UG </span>
+                <span className="gradient-title"> anytime, anywhere with DawaKonect </span>
               </h1>
               <p className="text-muted-foreground text-lg md:text-xl max-w-md">
                 Book appointments, consult via video, and manage your healthcare

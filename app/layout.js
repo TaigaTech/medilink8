@@ -4,11 +4,12 @@ import { ThemeProvider } from "next-themes";
 import Header from "@/components/header";
 import { dark } from "@clerk/themes";
 import { ClerkProvider } from "@clerk/nextjs";
+import "./registerServiceWorker.js";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "MediLink - Doctor's Appointment Platform",
+  title: "DawaKonect - Doctor's Appointment Platform",
   description: "Connect with doctors anytime, anywhere",
 };
 
@@ -19,6 +20,10 @@ export default function RootLayout({ children }) {
        }}
        >
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#4A90E2" />
+      </head>
       <body className={`${inter.className}`}>
 
       <ThemeProvider

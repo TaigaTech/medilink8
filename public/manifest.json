@@ -1,13 +1,13 @@
 {
-    "name": "MediLink UG",
-    "short_name": "MediLink",
-    "start_url": "/",
+    "name": "DawaKonect",
+    "short_name": "DawaKonect",
+    "start_url": "/sign-in",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#2563eb",
     "orientation": "portrait",
     "scope": "/",
-    "description": "MediLink UG - Your Health Companion",
+    "description": "DawaKonect - Your Health Companion",
     "icons": [
         {
             "src": "/icon-192x192.png",
